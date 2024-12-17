@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #050505;
+}
+
+/* About Page Container */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Text Content */
+.about-content {
+  flex: 1 1 60%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.about-content h1 {
+  font-size: 3.5rem;
+  color: #0008ff;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #070707;
+}
+
+/* Image Section */
+.about-image {
+  flex: 1 1 35%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-image .image-spacing {
+  margin-bottom: 200px; /* Add spacing between the two images */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-image {
+    margin-top: 20px;
+  }
+}
